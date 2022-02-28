@@ -401,7 +401,7 @@ class SunPowerPVSupervisorCollector(object):
         """
         Query the SunPower PV Supervisor on every exposition
         """
-        self.connect()
+        # self.connect()
 
         info_metrics = self.info_metrics()
         supervisor_metrics = self.supervisor_metrics()
@@ -508,4 +508,4 @@ class SunPowerPVSupervisorCollector(object):
             yield m["metric"]
 
         # Disconnect
-        self.disconnect()
+        # self.disconnect()
